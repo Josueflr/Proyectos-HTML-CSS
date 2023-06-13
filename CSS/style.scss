@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: #93bef2;
+  background-color: white;
 }
 
 .menubar {
@@ -32,10 +32,16 @@ body {
     flex-grow: 1;
 
     h1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 70%;
+      backdrop-filter: blur(10px);
       font-size: 55px;
       font-weight: bolder;
       color: whitesmoke;
-      //-webkit-text-stroke: 0.010px black;
+      padding: 15px;
     }
   }
   .navegacion {
@@ -46,6 +52,7 @@ body {
     width: 100%;
     height: 40%;
     ul {
+      background-color: #a7a5db;
       position: relative;
       display: flex;
       justify-content: center;
