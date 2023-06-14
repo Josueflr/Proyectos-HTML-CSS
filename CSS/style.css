@@ -30,6 +30,7 @@ body {
   align-items: center;
   width: 100%;
   flex-grow: 1;
+  cursor: pointer;
 }
 .menubar .portada h1 {
   display: flex;
@@ -40,7 +41,6 @@ body {
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   font-size: 55px;
-  font-weight: bolder;
   color: whitesmoke;
   padding: 15px;
 }
@@ -52,7 +52,8 @@ body {
   height: 40%;
 }
 .menubar .navegacion ul {
-  background-color: #a7a5db;
+  background: rgb(217, 209, 236);
+  background: linear-gradient(to right, rgb(217, 209, 236) 0%, rgb(98, 151, 205) 100%);
   position: relative;
   display: flex;
   justify-content: center;
@@ -60,12 +61,43 @@ body {
   width: 100%;
   gap: 30px;
 }
-.menubar .navegacion ul li {
+.menubar .navegacion ul .enunciado {
   list-style: none;
   cursor: pointer;
   padding: 5px;
   border-radius: 10px;
 }
-.menubar .navegacion ul li:hover {
-  background-color: wheat;
+.menubar .navegacion ul .enunciado .home,
+.menubar .navegacion ul .enunciado .people,
+.menubar .navegacion ul .enunciado .services,
+.menubar .navegacion ul .enunciado .callus {
+  background-color: yellow;
+}
+.menubar .navegacion ul .enunciado:hover {
+  background-color: #607ad6;
+  color: whitesmoke;
+}
+
+@media (max-width: 565px) {
+  .menubar .portada {
+    width: 100%;
+  }
+  .menubar .portada h1 {
+    font-size: 40px;
+  }
+  .menubar .navegacion ul {
+    font-size: 17px;
+    background: black;
+    gap: 8px;
+  }
+  .menubar .navegacion ul .enunciado {
+    background-color: aqua;
+  }
+  .menubar .navegacion ul .enunciado .home,
+  .menubar .navegacion ul .enunciado .people,
+  .menubar .navegacion ul .enunciado .services,
+  .menubar .navegacion ul .enunciado .callus {
+    background: yellow;
+    display: inline;
+  }
 }/*# sourceMappingURL=style.css.map */
