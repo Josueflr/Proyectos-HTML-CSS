@@ -58,6 +58,7 @@ body {
         rgba(217, 209, 236, 1) 0%,
         rgba(98, 151, 205, 1) 100%
       );
+
       position: relative;
       display: flex;
       justify-content: center;
@@ -68,22 +69,25 @@ body {
         list-style: none;
         cursor: pointer;
         padding: 5px;
-        border-radius: 10px;
-        .home,
-        .people,
-        .services,
-        .callus {
-          background-color: yellow
-        }
+
         &:hover {
           background-color: #607ad6;
           color: whitesmoke;
         }
       }
     }
+
+    span {
+      display: none;
+
+      ion-icon {
+        font-size: 35px;
+      }
+    }
   }
 }
-@media (max-width: 565px) {
+
+@media  (max-width: 650px) {
   .menubar {
     .portada {
       width: 100%;
@@ -93,18 +97,48 @@ body {
     }
     .navegacion {
       ul {
-        font-size: 17px;
-        background: black;
-        gap: 8px;
+        font-size: 18px;
+        gap: 5px;
         .enunciado {
-          background-color: aqua;
-          .home,
-          .people,
-          .services,
-          .callus {
-            background: yellow;
-            display: inline;
+          font-size: 15px;
+        }
+        span {
+          display: inline;
+          ion-icon {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
 
+@media  (max-width: 499px) {
+  .menubar {
+    .portada {
+      width: 100%;
+      h1 {
+        font-size: 30px;
+      }
+    }
+    .navegacion {
+      ul {
+        gap: 25px;
+        font-size: 18px;
+        .enunciado {
+          display: none;
+        }
+        span {
+          border-radius: 8px;
+          padding: 10px;
+          display: inline;
+          ion-icon {
+            font-size: 22px;
+          }
+
+          &:hover {
+            background-color: #607ad6;
+            color: whitesmoke;
           }
         }
       }

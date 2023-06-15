@@ -65,20 +65,19 @@ body {
   list-style: none;
   cursor: pointer;
   padding: 5px;
-  border-radius: 10px;
-}
-.menubar .navegacion ul .enunciado .home,
-.menubar .navegacion ul .enunciado .people,
-.menubar .navegacion ul .enunciado .services,
-.menubar .navegacion ul .enunciado .callus {
-  background-color: yellow;
 }
 .menubar .navegacion ul .enunciado:hover {
   background-color: #607ad6;
   color: whitesmoke;
 }
+.menubar .navegacion span {
+  display: none;
+}
+.menubar .navegacion span ion-icon {
+  font-size: 35px;
+}
 
-@media (max-width: 565px) {
+@media (max-width: 650px) {
   .menubar .portada {
     width: 100%;
   }
@@ -86,18 +85,43 @@ body {
     font-size: 40px;
   }
   .menubar .navegacion ul {
-    font-size: 17px;
-    background: black;
-    gap: 8px;
+    font-size: 18px;
+    gap: 5px;
   }
   .menubar .navegacion ul .enunciado {
-    background-color: aqua;
+    font-size: 15px;
   }
-  .menubar .navegacion ul .enunciado .home,
-  .menubar .navegacion ul .enunciado .people,
-  .menubar .navegacion ul .enunciado .services,
-  .menubar .navegacion ul .enunciado .callus {
-    background: yellow;
+  .menubar .navegacion ul span {
     display: inline;
+  }
+  .menubar .navegacion ul span ion-icon {
+    font-size: 20px;
+  }
+}
+@media (max-width: 499px) {
+  .menubar .portada {
+    width: 100%;
+  }
+  .menubar .portada h1 {
+    font-size: 30px;
+  }
+  .menubar .navegacion ul {
+    gap: 25px;
+    font-size: 18px;
+  }
+  .menubar .navegacion ul .enunciado {
+    display: none;
+  }
+  .menubar .navegacion ul span {
+    border-radius: 8px;
+    padding: 10px;
+    display: inline;
+  }
+  .menubar .navegacion ul span ion-icon {
+    font-size: 22px;
+  }
+  .menubar .navegacion ul span:hover {
+    background-color: #607ad6;
+    color: whitesmoke;
   }
 }/*# sourceMappingURL=style.css.map */
