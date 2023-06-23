@@ -1,0 +1,206 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.padre {
+  display: flex;
+  background: #8fbbaf;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+}
+.padre .login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 475px;
+  height: 450px;
+  background: #516091;
+  border-radius: 30px;
+  border: 2.25px solid #0e1821;
+  flex-direction: column;
+}
+.padre .login .icono_x {
+  position: absolute;
+  margin-left: 400px;
+  margin-bottom: 385px;
+  width: 35px;
+  height: 35px;
+}
+.padre .login .icono_x:hover {
+  cursor: pointer;
+}
+.padre .login .titulo {
+  width: 110px;
+  display: flex;
+  font-size: 30px;
+  color: whitesmoke;
+  justify-content: center;
+  align-items: center;
+  margin-top: -35px;
+  padding: 10px;
+  font-weight: bolder;
+}
+.padre .login .titulo .nombre {
+  margin: 0;
+  padding: 0;
+}
+.padre .login .formulario {
+  width: 310px;
+}
+.padre .login .formulario .email .icono_mail {
+  position: absolute;
+  margin-top: 3px;
+  color: whitesmoke;
+}
+.padre .login .formulario .email .nombre_email {
+  font-size: 20px;
+  color: whitesmoke;
+  margin-bottom: 7px;
+  margin-left: 25px;
+}
+.padre .login .formulario .password .icono_password {
+  position: absolute;
+  margin-top: 3px;
+  color: whitesmoke;
+}
+.padre .login .formulario .password .nombre_password {
+  font-size: 20px;
+  color: whitesmoke;
+  margin-bottom: 7px;
+  margin-left: 24px;
+}
+.padre .login .formulario input {
+  font-weight: 900;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  border: 2.25px solid black;
+  padding: 3px;
+  font-size: 15px;
+  border-radius: 6px;
+  width: 305px;
+  height: 27px;
+  margin-bottom: 10px;
+}
+.padre .login .formulario input:hover {
+  cursor: auto;
+}
+.padre .login .formulario input::before {
+  border-radius: 1px solid #01edc9;
+}
+.padre .login .title_forget_password {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: start;
+  flex-direction: row;
+  gap: 8px;
+}
+.padre .login .title_forget_password .olvidaste_contraseña {
+  font-size: 14px;
+  color: whitesmoke;
+  margin-top: 0.85px;
+}
+.padre .login .title_forget_password .link_forget {
+  margin-top: 0px;
+  font-size: 15px;
+  color: whitesmoke;
+  list-style: none;
+}
+.padre .login .boton-login {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin-left: 300px;
+}
+.padre .login .boton-login .boton {
+  font-size: 14px;
+  font-weight: 900;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  width: 100px;
+  height: 33px;
+  border-radius: 6px;
+}
+.padre .login .boton-login .boton:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 420px) {
+  .padre .login {
+    width: 345px;
+    height: 387px;
+  }
+  .padre .login .titulo {
+    padding: 0;
+    margin-top: 37px;
+    font-size: 20px;
+  }
+  .padre .login .formulario {
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .padre .login .formulario .email .icono_mail {
+    margin-top: 28px;
+  }
+  .padre .login .formulario .email .nombre_email {
+    font-size: 16.5px;
+  }
+  .padre .login .formulario .password .icono_password {
+    margin-top: 28px;
+  }
+  .padre .login .formulario .password .nombre_password {
+    font-size: 16.5px;
+  }
+  .padre .login .formulario input {
+    padding: 3px;
+    font-size: 11.5px;
+    width: 265px;
+    height: 25px;
+    margin-bottom: 10px;
+  }
+  .padre .login .title_forget_password {
+    width: 270px;
+    height: 20px;
+    gap: 3px;
+  }
+  .padre .login .title_forget_password .olvidaste_contraseña {
+    font-size: 11.5px;
+    margin-top: 0;
+  }
+  .padre .login .title_forget_password .link_forget {
+    font-size: 11.5px;
+  }
+  .padre .login .boton-login {
+    position: relative;
+    margin-top: 7.5px;
+    margin-right: 87px;
+  }
+  .padre .login .boton-login .boton {
+    font-size: 11.5px;
+    font-weight: 900;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    width: 82px;
+    height: 27px;
+    border-radius: 6px;
+  }
+  .padre .login .icono_x {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    margin-right: 107px;
+    margin-top: 50px;
+  }
+}/*# sourceMappingURL=styles.css.map */
