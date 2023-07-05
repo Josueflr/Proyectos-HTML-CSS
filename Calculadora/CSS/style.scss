@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f3787b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.Calculadora {
+  flex-direction: column;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #39393b;
+  height: 615px;
+  width: 470px;
+  border-radius: 10px;
+
+  .Pantalla {
+    margin-top: 16px;
+    display: flex;
+    background-color: #a1af76;
+    border-radius: 5px;
+    width: 88%;
+    height: 35%;
+  }
+
+  .manejobtnnegro {
+    margin-top: 3px;
+    height: 15%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    .btnnegros {
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 5px;
+      height: 75%;
+      width: 18%;
+      background-color: #130c0e;
+      color: white;
+      font-size: 25px;
+      border-radius: 4px;
+    }
+  }
+
+  .sietealmenos {
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    .numerosde7amenos {
+      background-color: #57595b;
+      height: 75%;
+      width: 18%;
+      border-radius: 4px;
+      font-size: 25px;
+      color: white;
+      cursor: pointer;
+    }
+  }
+
+  .cuatroalmas {
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    .numerosenmedio {
+      background-color: #57595b;
+      height: 75%;
+      width: 18%;
+      border-radius: 4px;
+      font-size: 25px;
+      color: white;
+      cursor: pointer;
+    }
+  }
+
+  .unoaltres {
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .ultimosnumeros {
+      background-color: #57595b;
+      height: 75%;
+      width: 18%;
+      border-radius: 4px;
+      font-size: 25px;
+      color: white;
+      cursor: pointer;
+
+      &:nth-child(2),
+      &:nth-child(3),
+      &:nth-child(4) {
+        margin-left: 15px;
+      }
+    }
+    #resultado {
+      background-color: #f25b2a;
+    }
+  }
+  .ultimafila {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 14%;
+    .ceroalac {
+      cursor: pointer;
+      background-color: #57595b;
+      color: white;
+      font-size: 25px;
+      width: 18%;
+      height: 75%;
+      border-radius: 4px;
+      &:nth-child(2),
+      &:nth-child(3),
+      &:nth-child(4) {
+        margin-left: 15px;
+      }
+    }
+    #AC,
+    #C {
+      background-color: #c62926;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .Calculadora {
+    flex-direction: column;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #39393b;
+    height: 515px;
+    width: 320px;
+    border-radius: 10px;
+  }
+}
+
+@media (min-height: 600px) {
+  .Calculadora {
+    padding: 5px;
+    flex-direction: column;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #39393b;
+    height: 515px;
+    width: 320px;
+    border-radius: 10px;
+  }
+}
